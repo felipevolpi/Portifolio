@@ -1,10 +1,10 @@
 @charset "UTF-8";
  
 body { 
-    background-image: linear-gradient(to right, #0D0D0D,#2E2B2F );
+    background-image: linear-gradient(to right, #dad5d5,#ffffff , #dad5d5);
      font-family: 'Oswald', sans-serif;
      font-size: 1pc;   
-     color: #04D9B2;
+     color: #5604d9;
     text-align: center;}
 h1 {background-color: #000000; 
     font-family: 'Staatliches', sans-serif;
