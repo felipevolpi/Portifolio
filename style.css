@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap');
+
+@font-face {
+         font-family: ;
+         src: url() format();
+         font-weight: normal;
+}        
  
 :root {
        --cor0: #5B44F2;
@@ -6,23 +14,29 @@
        --cor2: #0583F2;
        --cor3: #0597F2;
        --cor4: #F2F2F2;
+
+       --font-padrao: 'Roboto', sans-serif;
+       --font-destaque: 'Bebas Neue', 'cursive';
+       --font-titulo: 'Roboto', sans-serif;
 }
-
-
-
-
-
 * {    margin: 0px;
        padding: 0px;
 
 }
 header { background-color: #5058F2;
          color: #F2F2F2;
-         text-align: center;
-         min-height: 100px;
-         max-width: 600px;
+         font-family: var(--font-destaque);         text-align: center;
 
+         min-height: 50px;
+         max-width: 600px;
+            
+}          
+
+footer {  background-color: black;
+          color: #F2F2F2;
+          text-align: center;
+          font-family: var(--font-padrao);
+          font-size: 10px;
 
 
 }
-
