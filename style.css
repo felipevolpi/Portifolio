@@ -56,20 +56,8 @@ nav > a { color: #F2F2F2;
 }
 nav > a:hover { background-color: var(--cor3);
 
-}
-
-footer {  background-color: black;
-          color: #F2F2F2;
-          text-align: center;
-          font-family: var(--font-padrao);
-          font-size: 10px;
-          min-width: 250px;
-          max-width: 1280px;
-          margin: auto;
+}        
           
-          
-}
-
 main { min-width: 300px;
        max-width: 1280px;
        margin: auto;
@@ -103,6 +91,30 @@ main img { width: 100%;
            margin-bottom: 50px;
            
 }
-.videos { 
-       
+footer > ul {        
+       list-style-position: inside;
+       text-decoration-color: none;
+       columns: 2;
+       font-size: 12px;
+       text-align: justify;
+      
+      
+
 }
+footer {  
+       background-color: black;
+       color: #F2F2F2;
+       font-family: var(--font-padrao);
+       font-size: 10px;
+       min-width: 250px;
+       max-width: 1280px;
+       max-height: 150px;
+       margin: auto;
+       padding-top: 20px;
+       
+
+}
+footer > h3 { text-align: center;
+
+}
+
