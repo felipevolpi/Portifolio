@@ -1,128 +1,61 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
   
  
 :root {
-       --cor0: #5B44F2;
-       --cor1: #5058F2;
-       --cor2: #0583F2;
-       --cor3: #0597F2;
-       --cor4: #F2F2F2;
+       --cor0: #cdd916;
+       --cor1: #0074da;
+       --cor2: #365fd9;
+       --cor3: #010440;
+       --cor4: #010326;
+       --cor5: #accbee;
 
-       --font-padrao: 'PT Sans Narrow', sans-serif;;
-       --font-destaque: 'PT Sans Narrow', sans-serif;;
+       --font-padrao: 'Titillium Web', sans-serif;
 
 }
 
-* {    
+* { font-family: var(--font-padrao);   
     margin: 0px;
     padding: 0px;
 }
-.menu {
-       background-color: var(--cor2);
-       font-weight: lighter;
+a {
+       text-decoration: none;
 }
+.nav-list { 
+       display: flex;
+       list-style: none;
+       word-spacing: 5px;
+       margin-left: 32px;
+
+
+}
+.nav-list > li > a { 
+       color: white;         
        
-
-.menu > a  { 
-       font-family: var(--font-padrao);
-       background-color: #0583F2;       
-             
 }
-.menu > a:active { 
-       color: var(--cor1);
+picture { 
+       display: flex;
+       padding: 20px 20px 40px 20px;
+       background-color: white;
 }
-
-header { background-color: var(--cor2);
-         color: #F2F2F2;
-         font-family: var(--font-destaque);         
-         text-align: center;   
-         padding-top: 20px;
-         letter-spacing: 5px;
-
-}          
-
-nav { 
-      font-family: var(--font-titulo);
-      font-size: 16px;
-      color: #F2F2F2;
-      background-color: #000000;
-      max-width: 1280px;
-      text-align: center;
-      margin: 0 auto; 
+.section-1 { 
+       background-color: var(--cor0);
 }
-
-nav > a { color: #F2F2F2;
-          text-decoration: none;
-          font-family: var(--font-titulo);
-          font-weight: bolder;
-          border-radius: 5px 5px 0px 0px;
-          padding-inline: 10px;
-}
-nav > a:hover { background-color: var(--cor3);
-
-}        
-          
-main { min-width: 300px;
-       max-width: 1280px;
-       margin: auto;
-       background-color: var(--cor2);
-      
-} 
-main img { width: 100%;
-           margin: auto;   
-           
-}
-.esquerda { display: inline-block;
-            margin: auto;
-            max-height: 608px;
-            max-width: 300px;
-            min-height: 300px;
-            min-width: 300px;              
-
-}
-.direita { display: inline-block;
-           background-color: var(--cor4);
-           margin: auto;
-           border-radius: 10px;
-           min-width: 300px;
-           max-width: 800px;
-           max-height: 800px;
-           font-family: var(--font-padrao);
-           text-align: center;
-           color: black;
-           padding: 20px;
-           font-weight: bold;
-           margin-bottom: 50px;
-           
-}
-footer > ul {        
-       list-style-position: inside;
-       text-decoration-color: none;
-       columns: 2;
-       font-size: 12px;
-       text-align: justify;
-      
-      
+nav {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: var(--cor0);
+       height: 15vh;
+       max-width: 1170px;
 
 }
 footer {  
-       background-color: black;
-       color: #F2F2F2;
-       font-family: var(--font-padrao);
-       font-size: 10px;
-       min-width: 250px;
-       max-width: 1280px;
-       max-height: 150px;
-       margin: auto;
-       padding-top: 20px;
-       
-
-}
-footer > h3 { text-align: center;
-
+       background-color: #ffffff;
+       color: var(--cor3);
+       max-width: 1170px;
+       height: 8vh;
 }
 
