@@ -20,28 +20,25 @@
     margin: 0px;
     padding: 0px;
 }
+body { 
+       background-color: var(--cor5);
+}
 a {
        text-decoration: none;
+       color: #010326;
 }
+
+/*cabeçalho */
+
 .nav-list { 
        display: flex;
        list-style: none;
        word-spacing: 5px;
        margin-left: 32px;
-
-
+       flex-wrap: wrap;
 }
 .nav-list > li > a { 
-       color: white;         
-       
-}
-picture { 
-       display: flex;
-       padding: 20px 20px 40px 20px;
-       background-color: white;
-}
-.section-1 { 
-       background-color: var(--cor0);
+       color: white;               
 }
 nav {
        display: flex;
@@ -49,13 +46,72 @@ nav {
        align-items: center;
        background-color: var(--cor0);
        height: 15vh;
+       max-width: 100%;
+       margin: auto;
        max-width: 1170px;
+       padding: 0px 20px;
+       
+       
 
 }
+/*fim do cabeçalho */
+
+/* Fotografia*/
+picture {
+       padding: -10px;
+
+}
+div > img { 
+       padding: 20px ;
+       background-color: white;
+}
+
+.photo-home {      
+       display: flex;
+       background-color: var(--cor0);
+       padding: 20px;
+       flex-direction: column;
+       align-items: flex-end;
+       justify-content: center;
+       max-width: 100%;
+       margin: auto;
+       max-width: 1170px;
+       
+}
+.description {
+       margin-top: -45px;
+       max-width: 380px;
+       padding: 0px 20px 30px 20px;
+       text-align: justify;
+       background-color: white;
+
+}
+.button {
+       display: inline-block;
+       padding: 3px 0px 0px 150px;
+             
+}
+.button > a {       
+       font-weight: lighter;
+       background-color: var(--cor1);
+       color: white;
+       padding: 5px 10px;
+       border-radius: 3px;
+       
+}
+/* Fim da fotografia*/
+
+
+/*Rodapé*/
 footer {  
        background-color: #ffffff;
-       color: var(--cor3);
-       max-width: 1170px;
        height: 8vh;
+       text-align: center;
+       font-weight: bold;
+       padding: 10px;
+       word-spacing: 10px;
+
+
 }
+/* Fim*/
 
