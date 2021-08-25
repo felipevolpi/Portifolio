@@ -1,20 +1,18 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
   
  
 :root {
        --cor0: #2f3944;
-       --cor1: #0074da;
-       --cor2: #365fd9;
-       --cor3: #010440;
-       --cor4: #010326;
-       --cor5: #accbee;
-       --cor6: #414d5a;
-
-       --font-padrao: 'Titillium Web', sans-serif;
-       --font-titulo: 'Anton', sans-serif;
+       --cor1: #414d5a;
+       --cor2: #fefe01;
+       --cor3: #9c00ff;
+       --cor4: #12ced5;
+       
+       --font-padrao: 'Roboto', sans-serif;
+       
 
 }
 
@@ -23,49 +21,62 @@
     padding: 0px;
 }
 body { 
-       background-color: black;
+       background-color: gray;
 }
-a {
-       text-decoration: none;
-       color: #010326;
-}
+      
 
 /*cabeçalho */
 .menu {
        display: flex;
-       flex-wrap: wrap;
+       flex-flow: row wrap;
        justify-content: space-between; 
-}
-.nav-list { 
-       display: flex;
-       list-style: none;
-       word-spacing: 5px;
-       margin-left: 32px;
-       flex-flow: row nowrap;
-}
-.nav-list > li > a { 
-       color: white;               
 }
 nav {
        display: flex;
        justify-content: center;
        align-items: center;
-       background-color: var(--cor0);
+       background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
        height: 15vh;       
        margin: auto;
        max-width: 1170px;
        padding: 0px 20px;
        box-shadow: -1px 17px 15px 0px rgb(0 0 0 / 37%);
-       
-       
+            
        
 
 }
+.nav-list { 
+       display: flex;
+       list-style: none;
+       flex-flow: row wrap;
+}
+
+
+.nav-list > li > a { 
+       color: white; 
+       text-decoration: none;
+       margin: 0px 10px;
+       border-radius: 20px;
+       padding: 10px 10px; 
+       cursor: pointer;
+       box-shadow: inset 0 0 0 0 var(--cor4);
+       -webkit-transition: ease-out 0.4s;
+       -moz-transition: ease-out 0.4s;
+       transition: ease-out 0.4s;            
+}
+.nav-list > li > a:hover { 
+       border: 2px solid #ffffff; 
+       color: black;
+       padding: 10px 10px;     
+       box-shadow: inset 400px 50px 0 0 var(--cor3);          
+}
+
+
 /*fim do cabeçalho */
 
 /* Fotografia*/
 picture {
-       padding: -10px;
+       margin:auto;
 
 }
 div > img { 
@@ -109,86 +120,12 @@ div > img {
        
 }
 /* Fim da fotografia*/
-/* Cubos */
-.section-2 {
-       background-color: var(--cor0);
-       width: 100%;
-       margin: auto;
-       max-width: 1170px;
-       padding: 20px 20px 100px 20px;
-       box-shadow: -1px 17px 15px 0px rgb(0 0 0 / 37%)
-       
-            
-
-}
-.flex-container {
-       display: flex;
-       flex-flow: row nowrap;
-       justify-content: flex-start;
-       
-}
-
-.cubo-azul-claro { 
-       transform: rotate(45deg);
-       background-color: var(--cor1);
-       width: 350px;
-       height: 350px;
-       border-radius: 4px;
-       
-       
-}
-
-.cubo-azul-marinho { 
-       transform: rotate(45deg);
-       background-color: var(--cor3);
-       width: 350px;
-       height: 350px;
-       border-radius: 5px;
-       margin: 0px 0px 0px -150px;
-       
-       
-}
-.cubo-azul-marinho-escuro { 
-       display: flex;
-       transform: rotate(45deg);
-       background-color: var(--cor4);
-       width: 350px;
-       height: 350px;
-       border-radius: 4px;
-       margin: 0px 0px 0px -150px;
-}
-.flex-text {
-       
-       font-family: var(--font-titulo);
-       color: white;
-       transform: rotate(-45deg);
-       text-align: right;
-       margin: 150px 30px 0px 0px ;
-       font-size: 3rem;
-       letter-spacing: 5px;
-
-       
-}
-
-.portifoliolink {
-       display: block;
-       padding-top: -30px;
-       margin-top: -20px;
-       font-size: 2rem;
-       font-weight: 600;
-       color: white;
-       letter-spacing: 3px;
-       
-}
-
-/* Fim dos cubos */
 /*Rodapé*/
 footer {  
        background-color: #ffffff;
        height: 8vh;
        text-align: center;
        font-weight: bold;
-       padding: 10px 20px;
        word-spacing: 10px;
        margin: auto;
        max-width: 1170px;
@@ -198,6 +135,10 @@ footer {
 
 
 
+}
+.rodape a {
+       color: black;
+       text-decoration: none;
 }
 /* Fim*/
 
