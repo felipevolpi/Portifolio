@@ -18,7 +18,7 @@
        --cor4: #12ced5;
        
        --font-padrao: 'PantonNarrow', sans-serif;
-       --font-italico: 'PantonLight', sans-serif;
+       --font-light: 'PantonLight', sans-serif;
       
        
 
@@ -142,10 +142,11 @@ nav {
        margin: auto;
        display: flex;
        flex-flow: row wrap;
-       justify-content: space-between;
-       align-items: flex-start;
+       justify-content: center;
+       align-items: center;
        padding-bottom: 50px;
 }
+
 .photo-historia {      
        display: flex;
        flex-wrap: nowrap;
@@ -161,33 +162,44 @@ nav {
 }
 .photo-historia h4 {
        font-weight: 700;
-       font-family: var(--font-italico);
+       font-family: var(--font-light);
        text-align: justify;
 }
-.certificados {
+.box-certificados{
+       max-width: 600px;
        width: 100%;
+       margin: 0px 20px;
 }
 .certificados li {
-       margin: 20px 30px;
+       margin: 0px 30px;
        list-style: none;
-       width: 600px;
-       height: 100px;
+       max-width: 600px;
        background-color: #373d448e;
-
+       margin-bottom: 10px;
+       
 }
 .certificados h2 {
-       padding: 3px 10px;
+       padding: 0px 10px;
        border-radius: 10px;
-       background-image: linear-gradient(to right, #12ced579, var(--cor1));
+       background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+       color: var(--cor4);
+       letter-spacing: 1px;
 }
 .certificados li a {
        margin: 3px
 }
+.certificados li a:hover {
+       color: var(--cor2);
+}
 .formacao-1 li a {
        color: white;
        text-decoration: none;
+       margin: 10px;
+       font-family: PantonLight ;
+       font-weight: 600;       
        
 }
+
 /*imagens*/ 
 .imagens-section-1 { 
        background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
@@ -199,28 +211,80 @@ nav {
        align-items: flex-start;
        padding-bottom: 50px;
 }
-
+.imagens-section-1 h3{ 
+       color: black;
+       text-align: right;
+       font-size: 1rem;
+}
 .carrossel { 
        max-width: 650px;
-       margin: 10px 20px 10px 0px;
+       margin: 20px;
+      
 }
+
+
 .fotografias {
-       margin: 10px 20px 10px 0px;
+       margin: 20px 00px ;
        padding: 3px 10px;
        border-radius: 10px;
        background-image: linear-gradient(to left, #12ced579, var(--cor1));
        width: 450px;
 }
 .fotografias h2 {
-       color: black;
-       text-align: center;
+       color: white;
+       text-align: right;
+       letter-spacing: 1px;
 }
 .fotografias p {
        text-align: right;
-       font-weight: 400;
-       
+       font-weight: 700;
+       font-family: var(--font-light);
+       color: black;
+}    
+.fotografias-2 {
+        margin: 20px 00px ;
+        padding: 3px 10px;
+       border-radius: 10px;
+       background-image: linear-gradient(to right, #12ced579, var(--cor1));
+       width: 450px;
+ }
+.fotografias-2 h2 {
+              color: white;
+              text-align: center;
+              letter-spacing: 1px;
+  }
+.fotografias-2 p {
+              text-align: left;
+              font-weight: 700;
+              font-family: var(--font-light);
+              color: black;
+}
+.imagens-section-2 h3{
+       font-size: 1rem;
+       color: black;
+}
+.imagens-section-2 { 
+       background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
+       max-width: 1170px;
+       margin: auto;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+       align-items: flex-start;
+       padding-bottom: 50px;
+}
+/*Vídeos*/
+.section-video-1 {
+       background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
+       max-width: 1170px;
+       margin: auto;
+       padding-bottom: 50px;
+
 
 }
+
+
+
 @media (max-width: 500px) {
 .menu { 
        flex-direction: column;
