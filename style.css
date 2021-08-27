@@ -288,11 +288,28 @@ nav {
 @media (max-width: 500px) {
 .menu { 
        flex-direction: column;
-       
+       padding-bottom: 20px ;
+   
 }
 .LOGO { 
-        padding: 10px;
-        
+       padding-bottom: 20px;
+              
+              
+              
 }
 
+.nav-list { 
+       display: flex;
+       flex-direction: column;
+              
+ }
+       
+       
+       .nav-list > li > a { 
+              
+                     
+       }
+       .nav-list > li > a:hover { 
+                 
+       }
 }
