@@ -35,7 +35,7 @@ body {
 
 /*cabeçalho */
 
-nav {
+#header {
        display: flex;
        justify-content: space-between;
        align-items: center;
@@ -48,21 +48,19 @@ nav {
        
 
 }
-.LOGO {
+#LOGO {
        margin: 20px;
        max-height: 8vh;
        height: 100%;
        
 }
-
-.nav-list { 
+#menu { 
        display: flex;
        list-style: none;
        flex-flow: row wrap;
 }
 
-
-.nav-list > li > a { 
+#menu > li > a { 
        color: white; 
        background-image: linear-gradient(to right, var(--cor4), var(--cor3));
        font-size: 1rem;
@@ -76,7 +74,7 @@ nav {
        -moz-transition: ease-out 0.4s;
        transition: ease-out 0.4s;            
 }
-.nav-list > li > a:hover { 
+#menu > li > a:hover { 
        border: 2px solid #ffffff; 
        color: black;
        padding: 10px 10px;     
@@ -104,6 +102,10 @@ nav {
        width: 100%;
 }
 /*Footer*/
+#btn-mobile {
+       display: none;
+}
+
 .rodape { 
        display: flex;
        flex-flow: row wrap;
@@ -120,10 +122,10 @@ nav {
 .rodape a { 
        font-family: var(--font-padrao);
        font-weight: bolder;
-       font-size: 3vh;
+       font-size: 1rem;
        color: black;
        text-decoration: none;
-       margin: 0px 20px;
+       margin: 0px 10px;
        box-shadow: inset 0 0 0 0 var(--cor4);
        -webkit-transition: ease 0.4s;
        transition: ease-out 0.4s; 
@@ -132,7 +134,7 @@ nav {
 .rodape a:hover{
        box-shadow: inset 400px 50px 0 0 var(--cor3);
        border-radius: 3px;
-       padding: 10px 20px;
+       padding: 10px 15px;
 
 }
 /*Formação*/
@@ -286,30 +288,26 @@ nav {
 
 
 @media (max-width: 500px) {
-.menu { 
-       flex-direction: column;
-       padding-bottom: 20px ;
-   
-}
-.LOGO { 
-       padding-bottom: 20px;
-              
-              
-              
-}
 
-.nav-list { 
-       display: flex;
-       flex-direction: column;
-              
- }
-       
-       
-       .nav-list > li > a { 
-              
-                     
-       }
-       .nav-list > li > a:hover { 
-                 
-       }
+#btn-mobile {
+       display: block;
+       color: white; 
+       background-image: linear-gradient(to right, var(--cor4), var(--cor3));
+       font-size: 1rem;
+       text-decoration: none;
+       margin: 0px 10px;
+       border-radius: 20px;
+       padding: 10px 10px; 
+       cursor: pointer;
+       box-shadow: inset 0 0 0 0 var(--cor4);
+       -webkit-transition: ease-out 0.4s;
+       -moz-transition: ease-out 0.4s;
+       transition: ease-out 0.4s;
+}
+#menu {
+       display: none;
+}
+.rodape {
+       height: 12vh;
+}
 }
