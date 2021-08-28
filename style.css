@@ -284,8 +284,46 @@ body {
 
 
 }
-
-
+.flexbox-video {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+       
+}
+.video-box {
+      background-color: blanchedalmond;
+      padding: 20px;
+      padding-right: 49.5%;
+      padding-bottom: 29% ;
+      position: relative;
+}
+.video-box > iframe {
+       position: absolute;
+       top: 5%;
+       left: 5%;
+       width: 90% ;
+       height: 90% ;
+}
+.description-video { 
+       padding: 20px;
+      
+}
+.description-video h2 { 
+       padding: 0px 10px;
+       border-radius: 10px 0px 0px 10px;
+       background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+       color: var(--cor4);
+       letter-spacing: 1px;
+       
+}
+.description-video p { 
+       max-width: 600px;
+       width: 100%;
+       margin: 0px 20px;
+       
+       background-color: #373d448e;
+       margin-bottom: 10px;
+}
 
 @media (max-width: 500px) {
 
