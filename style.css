@@ -328,7 +328,7 @@ body {
 @media (max-width: 500px) {
 
 #btn-mobile {
-       display: block;
+       display: flex;
        color: white; 
        background-image: linear-gradient(to right, var(--cor4), var(--cor3));
        font-size: 1rem;
@@ -344,8 +344,60 @@ body {
 }
 #menu {
        display: none;
+       position: absolute;
+       width: auto;
+       right: 0px;
+       top: 70px;
+       text-align: center;
+       height: calc (100vh -70px);
+       margin: 0px 10px;
+       z-index: 1000;
+       transition:  .6s;
+       visibility: hidden;     
+       overflow-y: hidden;  
+       flex-direction: column;
 }
+#menu li a {
+       margin: 0.2rem;
+       padding:  10px 10px;
+       display: block;
+}
+
 .rodape {
        height: 12vh;
+}
+#nav.active #menu {
+       display: flex;
+       visibility: visible;
+       overflow: auto;
+      
+
+}
+#hamburguer {
+       border-top: 2px solid;
+       width: 20px;
+       display: block;
+}
+#hamburguer::after, #hamburguer::before {
+       content: '';
+       display: block;
+       width: 20px;
+       height: 2px;
+       background: currentColor;
+       margin-top: 5px;
+       transition: .3s;
+       position: relative;
+}
+#nav.active #hamburguer{
+    border-top: transparent;
+
+}
+#nav.active #hamburguer::after {
+       transform: rotate(135deg);
+       top: -7px;
+}
+#nav.active #hamburguer::before {
+       transform: rotate(-135deg);
+
 }
 }
