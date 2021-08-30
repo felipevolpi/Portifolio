@@ -10,16 +10,16 @@
        font-family: 'PantonLight';
        src: url('font/PantonNarrowDemo-Light.otf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 :root {
-       --cor0: #2f3944;
-       --cor1: #414d5a;
-       --cor2: #fefe01;
+       --cor0: #F5F5F5;
+       --cor1: #87CEEB;
        --cor3: #9c00ff;
-       --cor4: #12ced5;
+       --cor4: #00FFFF;
        
        --font-padrao: 'PantonNarrow', sans-serif;
        --font-light: 'PantonLight', sans-serif;
-      
+       --font-descrição: 'Open Sans', sans-serif;
        
 
 }
@@ -28,11 +28,9 @@
     margin: 0px;
     padding: 0px;
 }
-body { 
-       background-color: black;
+body {
+       background-color:  #87CEEB;
 }
-      
-
 /*cabeçalho */
 
 #header {
@@ -43,8 +41,7 @@ body {
        margin: auto;
        max-width: 1170px;
        background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
-       box-shadow: -1px 17px 15px 0px rgb(0 0 0 / 37%);
-            
+       
        
 
 }
@@ -61,13 +58,13 @@ body {
 }
 
 #menu > li > a { 
-       color: white; 
-       background-image: linear-gradient(to right, var(--cor4), var(--cor3));
+       color: rgba(0, 0, 0, 0.5); 
+       letter-spacing: 2px;
        font-size: 1rem;
        text-decoration: none;
-       margin: 0px 10px;
+       margin: 0px 5px;
        border-radius: 20px;
-       padding: 10px 10px; 
+       padding: 10px 20px; 
        cursor: pointer;
        box-shadow: inset 0 0 0 0 var(--cor4);
        -webkit-transition: ease-out 0.4s;
@@ -77,7 +74,7 @@ body {
 #menu > li > a:hover { 
        border: 2px solid #ffffff; 
        color: black;
-       padding: 10px 10px;     
+       padding: 10px 20px;     
        box-shadow: inset 400px 50px 0 0 var(--cor3);   
        font-weight: bolder;       
 }
@@ -93,13 +90,20 @@ body {
        background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor1));
        max-width: 1170px;
        margin: auto;
-}
-.picture { 
-       padding-bottom: 40px;
-}
-.picture img {
        
-       width: 100%;
+       
+      
+       
+}
+.section-1 p { 
+       text-align: center;
+       padding: 50px 0px;
+}
+.section-1 img{ 
+       display: flex;
+       justify-content: center;
+       
+       margin: auto;
 }
 /*Footer*/
 #btn-mobile {
@@ -119,6 +123,15 @@ body {
        margin-top: -30px;
        
 }
+.rodape img {
+       opacity: 0.6;
+       margin: 0px 10px;
+}
+.rodape img:hover {
+       opacity: 1;
+       padding-bottom: 10px;
+       transition: 0.4s;
+}
 .rodape a { 
        font-family: var(--font-padrao);
        font-weight: bolder;
@@ -132,9 +145,10 @@ body {
        
 }
 .rodape a:hover{
-       box-shadow: inset 400px 50px 0 0 var(--cor3);
+       
        border-radius: 3px;
-       padding: 10px 15px;
+       
+       
 
 }
 /*Formação*/
@@ -163,9 +177,10 @@ body {
        width: 100%;
 }
 .photo-historia h4 {
-       font-weight: 700;
-       font-family: var(--font-light);
+       font-weight: 400;
+       font-family: var(--font-descrição);
        text-align: justify;
+       
 }
 .box-certificados{
        max-width: 600px;
@@ -177,7 +192,7 @@ body {
        list-style: none;
        max-width: 600px;
        padding: 5px;
-       background-color: #373d448e;
+       background-color: #808080a9;
        margin-bottom: 10px;
        border-radius: 10px;
        color: white;
@@ -188,7 +203,7 @@ body {
        padding: 0px 10px;
        border-radius: 10px;
        background-image: linear-gradient(to right, var(--cor0), var(--cor1));
-       color: var(--cor4);
+       color: black;
        letter-spacing: 1px;
 }
 .certificados li a {
@@ -263,8 +278,8 @@ body {
   }
 .fotografias-2 p {
               text-align: left;
-              font-weight: 700;
-              font-family: var(--font-light);
+              font-weight: 300;
+              font-family: var(--font-descrição);
               color: black;
 }
 .imagens-section-2 h3{
@@ -319,7 +334,7 @@ body {
        padding: 0px 10px;
        border-radius: 10px 0px 0px 10px;
        background-image: linear-gradient(to right, var(--cor0), var(--cor1));
-       color: var(--cor4);
+       color: rgb(54, 54, 54);
        letter-spacing: 1px;
        
 }
@@ -328,7 +343,7 @@ body {
        width: 100%;
        margin: 0px 20px;
        
-       background-color: #373d448e;
+       background-color: #808080;
        margin-bottom: 10px;
 }
 
@@ -337,8 +352,8 @@ body {
 #btn-mobile {
        
        display: flex;
-       color: white; 
-       background-image: linear-gradient(to right, var(--cor4), var(--cor3));
+       color: rgba(0, 0, 0, 0.5); 
+       
        font-size: 1rem;
        text-decoration: none;
        margin: 0px 10px;
@@ -379,7 +394,8 @@ body {
        display: flex;
        visibility: visible;
        overflow: auto;
-      
+       background-color: var(--cor1);
+       border-radius: 5px;
 
 }
 #hamburguer {
