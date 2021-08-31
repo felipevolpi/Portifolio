@@ -312,7 +312,7 @@ body {
        
 }
 .video-box {
-      background-color: var(--cor0);
+     
       padding: 20px;
       padding-right: 90%;
       padding-bottom: 50% ;
@@ -320,6 +320,7 @@ body {
       border-radius: 10px;
 }
 .video-box > iframe {
+       
        position: absolute;
        top: 5%;
        left: 5%;
